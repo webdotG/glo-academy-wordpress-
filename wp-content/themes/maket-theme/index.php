@@ -108,8 +108,7 @@
 						<div class="col-12 col-lg-7 col-xl-7">
 							<div class="advantages">
 								<div class="advantages-title">
-									<h1>Все материалы для макетирования
-									по низкой цене и в наличии в Москве</h1>
+<h1><?php the_title(); ?></h1>
 								</div>
 								<!-- /.advantages-title -->
 								<div class="advantages-subtitle">
@@ -126,27 +125,41 @@
 											</div>
 											<!-- /.advantages-block__img -->
 											<div class="advantages-block__text">
-												На рынке макетирования
-												более 5 лет!
+
+
+<?php echo get_post_custom_values( 'first-place' , 2 ) [0]; ?>	
+										
+
 											</div>
 											<!-- /.advantages-block__text -->
 										</div>
 										<!-- /.advantages-block -->
 										<div class="advantages-block">
 											<div class="advantages-block__img">
-												<img src="<?php echo get_template_directory_uri();?>/img/main/img-2.png" alt="">
+
+
+<img src="<?php echo get_template_directory_uri();?>/img/main/img-2.png" alt="">
+
+
 											</div>
 											<!-- /.advantages-block__img -->
 											<div class="advantages-block__text">
-												Профессиональный подбор
-												необходимого материала
+											
+
+<?php echo get_post_custom_values( 'seconde-place' , 2 ) [0]; ?>
+
+
 											</div>
 											<!-- /.advantages-block__text -->
 										</div>
 										<!-- /.advantages-block -->
 										<div class="advantages-block">
 											<div class="advantages-block__img">
-												<img src="<?php echo get_template_directory_uri();?>/img/main/img-3.png" alt="">
+
+
+	<img src="<?php echo get_template_directory_uri();?>/img/main/img-3.png" alt="">
+
+
 											</div>
 											<!-- /.advantages-block__img -->
 											<div class="advantages-block__text">
@@ -161,24 +174,38 @@
 									<div class="col-12 col-md-6">
 										<div class="advantages-block">
 											<div class="advantages-block__img">
-												<img src="<?php echo get_template_directory_uri();?>/img/main/img-4.png" alt="">
+
+
+<img src="<?php echo get_template_directory_uri();?>/img/main/img-4.png" alt="">
+
+
 											</div>
 											<!-- /.advantages-block__img -->
 											<div class="advantages-block__text">
-												Каждый материал имеет
-												сертификат качества
+
+
+<?php the_field( 'acf-place' , 2 ); ?>	
+
+
 											</div>
 											<!-- /.advantages-block__text -->
 										</div>
 										<!-- /.advantages-block -->
 										<div class="advantages-block">
 											<div class="advantages-block__img">
-												<img src="<?php echo get_template_directory_uri();?>/img/main/img-5.png" alt="">
+
+
+<img src="<?php the_field( 'acf-place-img' , 2 ); ?>" alt="">
+
+
 											</div>
 											<!-- /.advantages-block__img -->
 											<div class="advantages-block__text">
-												Доставка по Москве
-												в день обращения
+
+
+<?php the_field( 'acf-place-img-text' , 2 ); ?>
+
+
 											</div>
 											<!-- /.advantages-block__text -->
 										</div>
@@ -189,8 +216,11 @@
 											</div>
 											<!-- /.advantages-block__img -->
 											<div class="advantages-block__text">
-												Быстрая доставка
-												в регионы
+
+
+<?php the_field( 'acf-place-about' , 2 ); ?>
+
+
 											</div>
 											<!-- /.advantages-block__text -->
 										</div>
@@ -538,7 +568,7 @@
 					<!-- /.slider-block -->
 					<div class="slider-block">
 						<div class="slider-block__img">
-							<img src="<?php echo get_template_directory_uri();?>/img/prototyping/prototyping-slide-4/slide-4-1img.png" alt="">
+<img src="<?php echo get_template_directory_uri();?>/img/prototyping/prototyping-slide-4/slide-4-1img.png" alt="">
 						</div>
 						<!-- /.slider-slider__img -->
 						<div class="slider-block__name">
@@ -804,7 +834,12 @@
 								</div>
 								<!-- /.contacts-block__img -->
 								<div class="contacts-block__text">
-									<a href="mailto:storent@maketstorent.ru">storent@maketstorent.ru</a>
+
+
+
+<a href="mailto:<?php the_field('email', 2); ?>"><?php the_field('email', 2); ?></a>
+
+
 								</div>
 								<!-- /.contacts-block__text -->
 							</div>
@@ -818,7 +853,11 @@
 								</div>
 								<!-- /.contacts-block__img -->
 								<div class="contacts-block__text">
-									<a href="tel:+7(495)008-55-77">+7 (495) 008-55-77</a>
+
+
+<a href="<?php the_field('phone', 2); ?>"><?php the_field('phone', 2); ?></a>
+
+
 								</div>
 								<!-- /.contacts-block__text -->
 							</div>
@@ -832,7 +871,11 @@
 								</div>
 								<!-- /.contacts-block__img -->
 								<div class="contacts-block__text">
-									пн-вс с 10-00 до 22-00
+
+
+<?php the_field('work-time', 2); ?>
+
+
 								</div>
 								<!-- /.contacts-block__text -->
 							</div>
