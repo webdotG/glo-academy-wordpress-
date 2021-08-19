@@ -108,7 +108,11 @@
 						<div class="col-12 col-lg-7 col-xl-7">
 							<div class="advantages">
 								<div class="advantages-title">
+
+
 <h1><?php the_title(); ?></h1>
+
+
 								</div>
 								<!-- /.advantages-title -->
 								<div class="advantages-subtitle">
@@ -671,12 +675,19 @@
 						<div class="col-12 col-lg-3">
 							<div class="manual-block">
 								<div class="manual-block__img">
-									<img src="<?php echo get_template_directory_uri();?>/img/manual/manual-img-1.png" alt="">
+
+
+<img src="<?php the_field('step1_img', 2); ?>" alt="">
+
+
 								</div>
 								<!-- /.manual-img -->
 								<div class="manual-block__text">
-									Позвонить/оставить запрос
-									на обратный звонок
+
+
+<?php the_field('step1', 2); ?>
+
+
 									<div class="manual-block__text_order  show-order">
 										Заполнить форму заказа
 									</div>
@@ -690,13 +701,19 @@
 						<div class="col-12 col-lg-3">
 							<div class="manual-block">
 								<div class="manual-block__img">
-									<img src="<?php echo get_template_directory_uri();?>/img/manual/manual-img-2.png" alt="">
+
+								
+<img src="<?php the_field('step2_img', 2); ?>" alt="">
+
+									
 								</div>
 								<!-- /.manual-img -->
 								<div class="manual-block__text">
-									Вам перезвонит
-									наш менеджер и уточнит
-									наличие товара
+
+
+<?php the_field('step2', 2); ?>
+
+
 								</div>
 								<!-- /.manual-text -->
 							</div>
@@ -707,12 +724,19 @@
 						<div class="col-12 col-lg-3">
 							<div class="manual-block">
 								<div class="manual-block__img">
-									<img src="<?php echo get_template_directory_uri();?>/img/manual/manual-img-3.png" alt="">
+
+
+	<img src="<?php the_field('step3_img', 2); ?>" alt="">
+
+
 								</div>
 								<!-- /.manual-img -->
-								<div class="manual-block__text">
-									Согласовать доставку
-									или самовывоз
+								<div class="manual-block__text"
+								
+								>
+<?php the_field('step3', 2); ?>
+
+
 									<div class="manual-block__text_order  show-order">
 										Подробнее о доставке
 									</div>
@@ -726,12 +750,19 @@
 						<div class="col-12 col-lg-3">
 							<div class="manual-block manual-block_last">
 								<div class="manual-block__img">
-									<img src="<?php echo get_template_directory_uri();?>/img/manual/manual-img-4.png" alt="">
+
+
+<img src="<?php the_field('step4_img', 2); ?>" alt="">
+
+
 								</div>
 								<!-- /.manual-img -->
 								<div class="manual-block__text">
-									Получить товар
-									и приятные эмоции
+
+
+<?php the_field('step4', 2); ?>
+
+
 								</div>
 								<!-- /.manual-text -->
 							</div>
